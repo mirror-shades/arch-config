@@ -24,7 +24,10 @@
     "pulseaudio#microphone"
   ],
   "hyprland/window": {
-    "format": "{}"
+    "format": "{title}",
+    "min-length": 1,
+    "max-length": 50,
+    "tooltip": true
   },
   "hyprland/workspaces": {
     "format": "{name}",
@@ -151,19 +154,24 @@
     "scroll-step": 5
   },
   "network": {
-    "format-wifi": "  {signalStrength}%",
-    "format-ethernet": "{ipaddr}/{cidr}",
-    "tooltip-format": "{essid} - {ifname} via {gwaddr}",
-    "format-linked": "{ifname} (No IP)",
-    "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": "󰈀 Connected",
+    "format-linked": " Linked",
+    "format-disconnected": "󰌙 Disconnected",
+    "format-disabled": "󰌘 !",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+    "tooltip-format-disconnected": "Disconnected"
   },
   "bluetooth": {
     "format": " {status}",
-    "format-disabled": "",
+    "format-on": " ~",
+    "format-off": " ⏻",
+    "format-disabled": " 🚫",
     "format-connected": " {num_connections}",
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}"
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "format-no-controller": " !"
   }
 }

@@ -21,32 +21,41 @@ tooltip {
 }
 
 #workspaces button {
-  padding: 5px;
+  background: #11191c;
   color: #b4aeb2;
-  margin-right: 5px; /* this is to prevent the button getting */
+  opacity: 0.7;
+  padding: 0px 10px;
+  margin-top: 10px;
+  border: 1px solid #2b2b2b;
 }
 
 #workspaces button.active {
-  color: #b4aeb2;
-  background-color: #11191c;
+  color: #11191c;
+  background-color: #b4aeb2;
+}
+
+#workspaces button.active:first-child {
+  margin-left: -5px;  /* Compensate for container's padding-left */
+}
+
+#workspaces button.active:last-child {
+  margin-right: 2px;  /* Compensate for container's padding-right */
 }
 
 #workspaces button.focused {
-  color: #b4aeb2;
-  background: #2b2b2b;
+  color: #11191c;
+  background: #b4aeb2;
   border-radius: 10px;
 }
 
 #workspaces button.urgent {
   color: #11191c;
   background: #b4aeb2;
-  border-radius: 10px;
 }
 
 #workspaces button:hover {
   background: #2b2b2b;
   color: #b4aeb2;
-  border-radius: 5px;
 }
 
 #power_profile,
@@ -62,7 +71,6 @@ tooltip {
 #temperature,
 #memory,
 #cpu,
-#workspaces,
 #tray,
 #backlight {
   background: #11191c;
@@ -72,24 +80,28 @@ tooltip {
   margin-top: 10px;
   border: 1px solid #2b2b2b;
 }
-
+ 
 #window {
   margin-left: 10px;
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 14px;
+  padding: 0 10px;
 }
 
-#battery {
-  margin-right: 10px;
+/* Style the window module when no windows are present */
+window#waybar.empty #window {
+  font-style: normal;
+  opacity: 0; /* Set opacity to 0 to hide the text when no windows are present */
 }
 
-#workspaces {
-  border-radius: 10px;
+#workspaces { 
   margin-left: 10px;
   padding-right: 0px;
   padding-left: 5px;
 }
 
 #tray {
-  border-radius: 10px;
   margin-right: 10px;
 }
 
@@ -97,28 +109,14 @@ tooltip {
 #network,
 #backlight,
 #cpu {
-  border-radius: 10px 0px 0px 10px;
   border-right: 0px;
 }
 
 #memory,
 #bluetooth,
 #pulseaudio.microphone {
-  border-radius: 0px 10px 10px 0px;
   border-left: 0px;
   margin-right: 10px;
-}
-
-#battery,
-#window,
-#clock {
-  border-radius: 10px;
-}
-
-#pulseaudio,
-#power_profile {
-  border-left: 0px;
-  border-right: 0px;
 }
 
 #battery.warning,
@@ -140,4 +138,8 @@ tooltip {
 #moon {
   border-radius: 0px 10px 10px 0px;
   border-right: 0px;
+}
+
+#battery {
+  margin-right: 10px;
 }
