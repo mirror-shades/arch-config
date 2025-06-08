@@ -1,7 +1,7 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: "JetBrains Mono";
+  font-family: "Fira Code:style=Regular", "Consolas";
   font-weight: bold;
   font-size: 16px;
   min-height: 0;
@@ -73,8 +73,12 @@ tooltip {
   border: 1px solid #2b2b2b;
 }
 
-#workspaces {
-  border-radius: 10px;
+/* Style the window module when no windows are present */
+window#waybar.empty #window {
+  opacity: 0;
+}
+
+#workspaces { 
   margin-left: 10px;
   padding-right: 0px;
   padding-left: 5px;
