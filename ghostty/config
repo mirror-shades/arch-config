@@ -43,3 +43,7 @@
 # resize-overlay-duration = 4s 200ms
 
 background-opacity = 0.8
+background = #11191c
+foreground = #b4aeb2
+font-family = "Fira Code"
+font-size = 14

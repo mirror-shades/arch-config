@@ -1,7 +1,7 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: "JetBrains Mono";
+  font-family: "Fira Code";
   font-weight: bold;
   font-size: 16px;
   min-height: 0;
@@ -24,7 +24,6 @@ tooltip {
   background: #11191c;
   color: #b4aeb2;
   opacity: 0.7;
-  padding: 0px 10px;
   margin-top: 10px;
   border: 1px solid #2b2b2b;
 }
@@ -32,14 +31,6 @@ tooltip {
 #workspaces button.active {
   color: #11191c;
   background-color: #b4aeb2;
-}
-
-#workspaces button.active:first-child {
-  margin-left: -5px;  /* Compensate for container's padding-left */
-}
-
-#workspaces button.active:last-child {
-  margin-right: 2px;  /* Compensate for container's padding-right */
 }
 
 #workspaces button.focused {
@@ -97,8 +88,6 @@ window#waybar.empty #window {
 
 #workspaces { 
   margin-left: 10px;
-  padding-right: 0px;
-  padding-left: 5px;
 }
 
 #tray {
@@ -119,13 +108,35 @@ window#waybar.empty #window {
   margin-right: 10px;
 }
 
-#battery.warning,
-#battery.critical {
-  background: #2b2b2b;
+#battery {
+  background-color: #11191c; /* Muted green */
+  color: #228B22;
+  border-color: #228B22;
+  border: 3px solid #228B22;
+  margin-right: 10px;
+}
 
+#battery.warning {
+  color: #fab387;
+  border-color: #fab387;
+  border: 3px solid #fab387;
+}
+
+#battery.critical {
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+  border: 3px solid #ff6b6b;
 }
 
 #temperature.critical {
+  color: #ff6b6b;
+}
+
+#cpu.high {
+  color: #ff6b6b;
+}
+
+#memory.high {
   color: #ff6b6b;
 }
 
@@ -138,8 +149,4 @@ window#waybar.empty #window {
 #moon {
   border-radius: 0px 10px 10px 0px;
   border-right: 0px;
-}
-
-#battery {
-  margin-right: 10px;
 }
