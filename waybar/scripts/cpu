@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Get CPU temperature
+temp=$(sensors | grep "Package id 0:" | awk '{print $4}' | tr -d '+°C')
+
+# Check if temperature was found
+if [ -z "$temp" ]; then
+    temp=$(sensors | grep "Tctl:" | awk '{print $2}' | tr -d '+°C')
+fi
+
+# Output temperature with icon
+echo "$temp°C" 
