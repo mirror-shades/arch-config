@@ -61,7 +61,7 @@
   },
   "cpu": {
     "interval": 1,
-    "format": "🖥️ {usage}%",
+    "format": "󰍹 {usage}%",
     "tooltip": true,
     "states": {
       "high": 80
@@ -69,7 +69,7 @@
   },
   "memory": {
     "interval": 1,
-    "format": "💾 {percentage}%",
+    "format": "󰉉 {percentage}%",
     "tooltip": true,
     "states": {
       "high": 80
@@ -97,9 +97,9 @@
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
     "format-icons": [
-      "🔅",
-      "🔆",
-      "☀️"
+      "󰃞",
+      "󰃟",
+      "󰃠"
     ],
     "on-scroll-up": "brightnessctl -q set 1%+",
     "on-scroll-down": "brightnessctl -q set 1%-"
@@ -110,73 +110,72 @@
       "critical": 15
     },
     "format": "{icon} {capacity}%",
-    "format-charging": "🔌 {capacity}%",
-    "format-plugged": "🔌 {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
     "format-alt": "{time} {icon}",
     "format-icons": [
-      "🪫",
-      "🔋",
-      "🔋",
-      "🔋",
-      "🔋",
-      "🔋",
-      "🔋",
-      "🔋",
-      "🔋",
-      "🔋",
-      "🔋"
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
     ]
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "tooltip": false,
-    "format-muted": "🔇 Muted",
+    "format-muted": "󰖁 Muted",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
     "scroll-step": 5,
     "format-icons": {
-      "headphone": "🎧",
-      "hands-free": "🎧",
-      "headset": "🎧",
-      "phone": "📱",
-      "portable": "📱",
-      "car": "🎧",
+      "headphone": "󰋋",
+      "hands-free": "󰋋",
+      "headset": "󰋋",
+      "phone": "󰏲",
+      "portable": "󰏲",
+      "car": "󰋋",
       "default": [
-        "🔈",
-        "🔉",
-        "🔊"
+        "󰕿",
+        "󰖀",
+        "󰕾"
       ]
     }
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
-    "format-source": "🎤 {volume}%",
-    "format-source-muted": "🎤 Muted",
+    "format-source": "󰍬 {volume}%",
+    "format-source-muted": "󰍭 Muted",
     "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
     "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +5%",
     "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%",
     "scroll-step": 5
   },
   "network": {
-    "format-wifi": "📶 {signalStrength}%",
-    "format-ethernet": "🌐 Connected",
-    "format-linked": "🔗 Linked",
-    "format-disconnected": "❌ Disconnected",
-    "format-disabled": "⚠️ Disabled",
+    "format-wifi": "󰤨 {signalStrength}%",
+    "format-ethernet": "󰈀 Connected",
+    "format-linked": "󰈀 Linked",
+    "format-disconnected": "󰤭 Disconnected",
+    "format-disabled": "󰤫 Disabled",
     "tooltip-format-wifi": "{essid} ({signalStrength}%)",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
     "tooltip-format-disconnected": "Disconnected"
   },
   "bluetooth": {
-    "format": "🔄 {status}",
-    "format-on": "🔄 On",
-    "format-off": "🔄 Off",
-    "format-disabled": "🔄 Disabled",
-    "format-connected": "🔄 {num_connections}",
+    "format": "󰂯 {status}",
+    "format-on": "󰂯 On",
+    "format-off": "󰂲 Off",
+    "format-disabled": "󰂲 Disabled",
+    "format-connected": "󰂱 {num_connections}",
     "tooltip-format": "{device_alias}",
-    "tooltip-format-connected": "🔄 {device_enumerate}",
+    "tooltip-format-connected": "󰂯 {device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}",
-    "format-no-controller": "🔄 !"
+    "format-no-controller": "󰂲 !"
   }
 }
