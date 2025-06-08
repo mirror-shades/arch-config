@@ -1,6 +1,6 @@
 * {
   border-radius: 0;
-  font-family: "FiraCode Nerd Font", "Fira Code";
+  font-family: "FiraCode Nerd Font", monospace;
   font-weight: bold;
   font-size: 16px;
   min-height: 0;
