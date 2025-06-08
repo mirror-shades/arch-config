@@ -14,10 +14,10 @@
     "clock"
   ],
   "modules-right": [
-    "network",
-    "bluetooth",
     "cpu",
     "memory",
+    "network",
+    "bluetooth",
     "battery",
     "backlight",
     "pulseaudio",
@@ -58,12 +58,12 @@
   },
   "cpu": {
     "interval": 1,
-    "format": " {usage}%",
+    "format": "🖥️ {usage}%",
     "tooltip": true
   },
   "memory": {
     "interval": 1,
-    "format": "🧠 {percentage}%",
+    "format": "💾 {percentage}%",
     "tooltip": true
   },
   "tray": {

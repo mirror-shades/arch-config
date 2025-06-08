@@ -23,7 +23,7 @@ tooltip {
 #workspaces button {
   padding: 5px;
   color: #b4aeb2;
-  margin-right: 5px;
+  margin-right: 5px; /* this is to prevent the button getting */
 }
 
 #workspaces button.active {
@@ -49,18 +49,19 @@ tooltip {
   border-radius: 5px;
 }
 
-#custom-power_profile,
-#custom-weather,
-#custom-moon,
-#custom-wallpaper,
+#power_profile,
+#weather,
+#moon,
+#wallpaper,
 #window,
 #clock,
 #battery,
 #pulseaudio,
 #network,
 #bluetooth,
-#custom-temperature,
-#custom-memory,
+#temperature,
+#memory,
+#cpu,
 #workspaces,
 #tray,
 #backlight {
@@ -68,9 +69,16 @@ tooltip {
   color: #b4aeb2;
   opacity: 0.7;
   padding: 0px 10px;
-  margin: 0px 0px;
   margin-top: 10px;
   border: 1px solid #2b2b2b;
+}
+
+#window {
+  margin-left: 10px;
+}
+
+#battery {
+  margin-right: 10px;
 }
 
 #workspaces {
@@ -85,14 +93,15 @@ tooltip {
   margin-right: 10px;
 }
 
-#custom-temperature,
+#temperature,
 #network,
-#backlight {
+#backlight,
+#cpu {
   border-radius: 10px 0px 0px 10px;
   border-right: 0px;
 }
 
-#custom-memory,
+#memory,
 #bluetooth,
 #pulseaudio.microphone {
   border-radius: 0px 10px 10px 0px;
@@ -104,11 +113,10 @@ tooltip {
 #window,
 #clock {
   border-radius: 10px;
-  margin-left: 10px;
 }
 
 #pulseaudio,
-#custom-power_profile {
+#power_profile {
   border-left: 0px;
   border-right: 0px;
 }
@@ -116,20 +124,20 @@ tooltip {
 #battery.warning,
 #battery.critical {
   background: #2b2b2b;
+
 }
 
-#custom-temperature.critical {
+#temperature.critical {
   color: #ff6b6b;
 }
 
-#custom-power_profile {
+#power_profile {
   color: #b4aeb2;
   border-left: 0px;
   border-right: 0px;
 }
 
-#custom-moon {
+#moon {
   border-radius: 0px 10px 10px 0px;
   border-right: 0px;
-  margin-left: 0px;
 }
