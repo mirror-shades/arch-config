@@ -1,0 +1,104 @@
+# ~/.config/helix/themes/mirror.toml
+
+"type" = "yellow"
+"constant" = "blue"
+"constant.numeric" = "green"
+"constant.character.escape" = "blue"
+"string" = "green"
+"string.regexp" = "yellow"
+"comment" = "grey"
+"variable" = "fg"
+"variable.builtin" = "yellow"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+"label" = "yellow"
+"punctuation" = "grey"
+"punctuation.delimiter" = "grey"
+"punctuation.bracket" = "fg"
+"keyword" = "blue"
+"keyword.directive" = "blue"
+"operator" = "red"
+"function" = "blue"
+"function.builtin" = "blue"
+"function.macro" = "blue"
+"tag" = "yellow"
+"namespace" = "red"
+"attribute" = "blue"
+"constructor" = "yellow"
+"module" = "red"
+"special" = "yellow"
+
+"markup.heading.marker" = "grey"
+"markup.heading.1" = { fg = "purple", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "red", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "blue", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "yellow", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "green", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "fg", modifiers = ["bold"] }
+"markup.list" = "red"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "green", modifiers = ["underlined"] }
+"markup.link.text" = "purple"
+"markup.quote" = "grey"
+"markup.raw" = "green"
+
+"diff.plus" = "green"
+"diff.delta" = "orange"
+"diff.minus" = "red"
+
+"ui.background" = { fg = "fg", bg = "bg" }
+"ui.background.separator" = "grey"
+"ui.cursor" = { fg = "black", bg = "fg" }
+"ui.cursor.match" = { fg = "yellow", bg = "yellow" }
+"ui.cursor.insert" = { fg = "black", bg = "grey" }
+"ui.cursor.select" = { fg = "black", bg = "blue" }
+"ui.cursorline.primary" = { bg = "bg3" }
+"ui.cursorline.secondary" = { bg = "bg3" }
+"ui.selection" = { bg = "bg4" }
+"ui.linenr" = "grey"
+"ui.linenr.selected" = "fg"
+"ui.statusline" = { fg = "fg", bg = "bg3" }
+"ui.statusline.inactive" = { fg = "grey", bg = "bg3" }
+"ui.statusline.normal" = { fg = "black", bg = "fg", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "black", bg = "blue", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "black", bg = "blue", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "grey", bg = "bg3" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg4", modifiers = ["bold"] }
+"ui.popup" = { fg = "grey", bg = "bg3" }
+"ui.window" = { fg = "grey", bg = "black" }
+"ui.help" = { fg = "fg", bg = "bg3" }
+"ui.text" = "fg"
+"ui.text.focus" = "green"
+"ui.menu" = { fg = "fg", bg = "bg3" }
+"ui.menu.selected" = { fg = "black", bg = "blue" }
+"ui.virtual.whitespace" = { fg = "bg4" }
+"ui.virtual.indent-guide" = { fg = "bg4" }
+"ui.virtual.ruler" = { bg = "bg3" }
+
+"hint" = "blue"
+"info" = "green"
+"warning" = "yellow"
+"error" = "red"
+"diagnostic" = { underline = { style = "line" } }
+"diagnostic.hint" = { underline = { color = "blue", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "green", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+
+[editor.font]
+family = "Fira Code"
+size = 14
+
+[palette]
+bg = "#2b2b2b"
+fg = "#b4aeb2"
+black = "#2b2b2b"
+red = "#ff6b6b"
+green = "#228B22"
+yellow = "#fab387"
+blue = "#b4aeb2"
+grey = "#b4aeb2"
+bg3 = "#2a4a3f"
+bg4 = "#3a5a4f"
+

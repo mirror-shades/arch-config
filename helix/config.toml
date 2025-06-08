@@ -1,0 +1,26 @@
+theme = "mirror"
+
+[editor]
+mouse = true
+middle-click-paste = true
+scrolloff = 999
+shell = ["/sbin/bash", "-c"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+center = ["diagnostics"]
+right = ["position", "file-encoding", "file-type"]
+
+[editor.lsp]
+display-messages = true

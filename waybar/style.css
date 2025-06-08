@@ -112,20 +112,20 @@ window#waybar.empty #window {
   background-color: #11191c; /* Muted green */
   color: #228B22;
   border-color: #228B22;
-  border: 3px solid #228B22;
+  border: 2px solid #228B22;
   margin-right: 10px;
 }
 
 #battery.warning {
   color: #fab387;
   border-color: #fab387;
-  border: 3px solid #fab387;
+  border: 2px solid #fab387;
 }
 
 #battery.critical {
   color: #ff6b6b;
   border-color: #ff6b6b;
-  border: 3px solid #ff6b6b;
+  border: 2px solid #ff6b6b;
 }
 
 #temperature.critical {
