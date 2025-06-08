@@ -1,7 +1,7 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: "Fira Code";
+  font-family: "Fira Code:style=Regular", "Consolas";
   font-weight: bold;
   font-size: 16px;
   min-height: 0;
@@ -82,8 +82,7 @@ tooltip {
 
 /* Style the window module when no windows are present */
 window#waybar.empty #window {
-  font-style: normal;
-  opacity: 0; /* Set opacity to 0 to hide the text when no windows are present */
+  opacity: 0;
 }
 
 #workspaces { 
