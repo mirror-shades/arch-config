@@ -61,7 +61,7 @@
   },
   "cpu": {
     "interval": 1,
-    "format": "🖥️ {usage}%",
+    "format": "󰻠 {usage}%",
     "tooltip": true,
     "states": {
       "high": 80
@@ -69,7 +69,7 @@
   },
   "memory": {
     "interval": 1,
-    "format": "💾 {percentage}%",
+    "format": "󰍛 {percentage}%",
     "tooltip": true,
     "states": {
       "high": 80
