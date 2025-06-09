@@ -129,7 +129,7 @@
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "tooltip": false,
-    "format-muted": "󰖁 Muted",
+    "format-muted": "",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
@@ -151,7 +151,7 @@
   "pulseaudio#microphone": {
     "format": "{format_source}",
     "format-source": "󰍬 {volume}%",
-    "format-source-muted": "󰍭 Muted",
+    "format-source-muted": "󰍭",
     "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
     "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +5%",
     "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%",
@@ -159,19 +159,19 @@
   },
   "network": {
     "format-wifi": "󰤨 {signalStrength}%",
-    "format-ethernet": "󰈀 Connected",
-    "format-linked": "󰈀 Linked",
-    "format-disconnected": "󰤭 Disconnected",
-    "format-disabled": "󰤫 Disabled",
+    "format-ethernet": "󰈀 ",
+    "format-linked": "󰈀 󰟦",
+    "format-disconnected": "󰤭 󰌙",
+    "format-disabled": "󰤫 ",
     "tooltip-format-wifi": "{essid} ({signalStrength}%)",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
-    "tooltip-format-disconnected": "Disconnected"
+    "tooltip-format-disconnected": ""
   },
   "bluetooth": {
     "format": "󰂯 {status}",
-    "format-on": "󰂯 On",
-    "format-off": "󰂲 Off",
-    "format-disabled": "󰂲 Disabled",
+    "format-on": "󰂯 ⏽",
+    "format-off": "󰂲 ",
+    "format-disabled": "󰂲 ",
     "format-connected": "󰂱 {num_connections}",
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": "󰂯 {device_enumerate}",

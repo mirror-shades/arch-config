@@ -9,6 +9,8 @@
 
 ## Post-Install Setup
 
+Best to restart and log in rather than chroot after install but it can be done. the commands might need to be adjusted if doing in root.
+
 ### Networking
 
 Connect to WiFi (if needed):
@@ -22,7 +24,7 @@ nmcli dev wifi connect <SSID> password <password>
 
 ```
 git clone https://github.com/mirror-shades/arch-config.git
-sudo cp ./arch-config/* ~/.config
+sudo cp -r ./arch-config/* ~/.config
 rm -r arch-config // for cleanup
 ```
 
@@ -32,6 +34,12 @@ Enable ly display manager. This command only needs to be run once:
 
 ```bash
 sudo systemctl enable ly
+```
+
+### Reboot
+
+```
+reboot
 ```
 
 ## Finished
@@ -52,6 +60,8 @@ You now have an extremely lightweight rice of hyperland to do whatever you want 
 - space see programs menu
 - [number] switch workspace
 - shift + [number] switch window to workspace
+
+You can see and edit keybinding in the hyprland config file.
 
 ## Additional steps
 
