@@ -25,7 +25,20 @@ nmcli dev wifi connect <SSID> password <password>
 ```
 git clone https://github.com/mirror-shades/arch-config.git
 sudo cp -r ./arch-config/* ~/.config
-rm -r arch-config // for cleanup
+```
+
+This allows you to `git pull` in your config folder to update it
+
+```
+// managed config
+sudo cp -r ./arch-config/.git ~/.config
+```
+
+You can safely remove the repo now
+
+```
+// cleanup
+rm -r arch-config
 ```
 
 ### Display Manager
