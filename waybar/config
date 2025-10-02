@@ -130,7 +130,7 @@
     "format": "{icon} {volume}%",
     "tooltip": false,
     "format-muted": "",
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click": "pavucontrol",
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
     "scroll-step": 5,
@@ -176,6 +176,7 @@
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": "󰂯 {device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}",
-    "format-no-controller": "󰂲 !"
+    "format-no-controller": "󰂲 !",
+    "on-click": "blueman-manager"
   }
 }
