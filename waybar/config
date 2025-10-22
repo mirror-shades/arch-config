@@ -20,8 +20,8 @@
     "bluetooth",
     "battery",
     "backlight",
-    "pipewire",
-    "pipewire#microphone"
+    "wireplumber",
+    "wireplumber#microphone"
   ],
   "hyprland/window": {
     "format": "{title}",
@@ -108,7 +108,7 @@
       "󰁹"
     ]
   },
-  "pipewire": {
+  "wireplumber": {
     "format": "{icon} {volume}%",
     "tooltip": false,
     "format-muted": "",
@@ -130,7 +130,7 @@
       ]
     }
   },
-  "pipewire#microphone": {
+  "wireplumber#microphone": {
     "format": "{format_source}",
     "format-source": "󰍬 {volume}%",
     "format-source-muted": "󰍭",

@@ -49,7 +49,7 @@ tooltip {
 #window,
 #clock,
 #battery,
-#pulseaudio,
+#wireplumber,
 #network,
 #bluetooth,
 #temperature,
@@ -91,7 +91,8 @@ window#waybar.empty #window {
 
 #memory,
 #bluetooth,
-#pulseaudio.microphone {
+#wireplumber,
+#wireplumber.microphone {
   margin-right: 10px;
 }
 
