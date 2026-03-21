@@ -1,0 +1,9 @@
+# Ignore all files by default
+*
+
+# Except for the following files
+!.gitignore
+!hypr
+!waybar
+!ghostty
+!helix
